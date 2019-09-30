@@ -12,8 +12,7 @@ class MainActivity : AppCompatActivity(), MainContract.view {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_layout)
-        mPresenter = Presenter(this, DiceModel())
-
+        mPresenter = Presenter(this)
 
         roll_bttn.setOnClickListener {
             (mPresenter.rollDie())

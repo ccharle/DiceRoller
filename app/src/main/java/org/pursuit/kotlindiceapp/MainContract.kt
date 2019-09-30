@@ -8,20 +8,19 @@ interface MainContract {
 
     }
 
-    interface presenter {
-        fun rollDie()
+    interface presenter{
 
+    fun rollDie()
 
+    interface onDieFinishedListener {
+        fun onDieRollFinished(dice1: Int, dieTwo: Int)
     }
 
-    interface Model {
-        interface onDieFinishedListener {
-            fun onDieRollFinished(dice1: Int, dieTwo: Int)
-        }
+    fun dieRolled(onDieFinished: onDieFinishedListener)
 
-        fun dieRolled(onDieFinished: onDieFinishedListener)
-
-
-    }
 
 }
+
+
+}
+

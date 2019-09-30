@@ -18,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        Pursuits-MacBook-Pro:KotlinDiceApp pursuit$ git commit - m "initial commit"
     </application>
 
 </manifest>
